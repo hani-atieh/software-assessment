@@ -1,24 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>    
-    <title>{% block title %}BASE{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1", charset="utf-8">
-    {% block CSS %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/base.css') }}">
-    {% endblock %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/base.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
-
-    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
-</head>
 <body>
     <section class="TOP">
         <div class="DD-TITLE">
@@ -49,6 +30,27 @@
             {% endif %}
         </nav>
     </section>
+
+    <head>    
+        <title>{% block title %}BASE{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1", charset="utf-8">
+        {% block CSS %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/base.css') }}">
+        {% endblock %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/base.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+        <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+    
+        <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+    </head>
+
 
     
     {% with messages = get_flashed_messages(with_categories=true) %}
