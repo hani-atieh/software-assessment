@@ -1,0 +1,44 @@
+.GAME-INFO-SEC {
+    background-color: rgba(32, 30, 30, 0.301);
+    flex: 1.25;
+    color: whitesmoke;
+}
+.GAME-INFO-SEC h1 {
+    text-align: center;
+    font-size: 290%;
+    padding-top: 15px;
+    flex: 1;
+    margin-left:80px
+}
+.GAME-INFO-SEC p {
+    font-size: 150%;
+    padding: 35px;
+}
+.HEADING {
+    margin-top:50px;
+    display:flex
+}
+.GO-BACK {
+    text-align: center;
+    margin: 40px;
+    margin-top:10px;
+    margin-bottom:135px;
+    margin-right:10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    flex: 0.016;
+    font-size: 200%;
+    font-weight: 500;
+    border: none;
+    cursor:pointer;
+    padding:5px;
+}
+.GO-BACK a{
+    color:rgb(255, 255, 255);
+}
+.GO-BACK a:hover {
+    color:rgb(203, 37, 37);
+    
+}
+.GO-BACK a:active {
+    color:white;
+}

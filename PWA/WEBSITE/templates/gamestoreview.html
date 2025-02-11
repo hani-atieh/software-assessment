@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block CSS %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/gamestoreview.css') }}">{% endblock %}
+{% block main %}
+    <main>
+
+
+        <section class="GAME-LIST">
+            <h1>Games to Review</h1>
+            <p1><i>NOTE:</i> Click on the game that catches your interest, and then you'll be able to read the description of the game to then leave a review!</p1>
+            <hr>
+
+            <div class="GAME-ROW">
+                <div class="GAME"><a href="/games to review/thewitcher3"><img src="{{ url_for('static', filename='images/thewitcherwildhunt3.jpg') }}"></a></div>
+                <div class="GAME"><a href="/games to review/gta5"><img src="{{ url_for('static', filename='images/grandtheftautov.webp') }}"></a></div>
+            </div>
+
+            <div class="GAME-ROW">
+                <div class="GAME"><a href="/games to review/rdr2"><img src="{{ url_for('static', filename='images/rdr2.avif') }}"></a></div>
+                <div class="GAME"><a href="/games to review/eldenring"><img src="{{ url_for('static', filename='images/eldenring.webp') }}"></a></div>
+            </div>
+
+            <div class="GAME-ROW">
+                <div class="GAME"><a href="/games to review/gowr"><img src="{{ url_for('static', filename='images/godofwarragnarok.jpg') }}"></a></div>
+                <div class="GAME"><a href="/games to review/minecraft"><img src="{{ url_for('static', filename='images/minecraft.webp') }}"></a></div>
+            </div>
+
+            <div class="GAME-ROW">
+                <div class="GAME"><a href="/games to review//TLOU2"><img src="{{ url_for('static', filename='images/TLOU_P2_Box_Art_2.png') }}"></a></div>
+                <div class="GAME"><a href="/games to review/darksouls"><img src="{{ url_for('static', filename='images/darksouls.avif') }}"></a></div>
+            </div>
+
+            <div class="GAME-ROW">
+                <div class="GAME"><a href="/games to review/TESVS"><img src="{{ url_for('static', filename='images/elder-scrolls-skyrim-button-2017-1629409446732.jpg') }}"></a></div>
+                <div class="GAME"><a href="/games to review/fortnite"><img src="{{ url_for('static', filename='images/fortnite-wallpaper-4k.avif') }}"></a></div>
+            </div>
+            
+        </section>
+    </main>
+{% endblock %}

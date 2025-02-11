@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    min-height:max-content;
+    min-width: fit-content;
+    height:100px;
+    width: 100%;
+    font-weight: 200
+}
+body {
+    background: linear-gradient(#2e2d2d, #0c6ddc, #101010);
+    font-family: "Nunito", serif;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.TOP {
+    min-width:max-content;
+    size: auto;
+    display: flex;
+    margin-top: auto 0;
+    padding: 0px;
+    color:  rgb(0, 238, 255);
+    font-weight: 200
+}
+.DD-TITLE {
+    display: flex;
+    flex: 0.9;
+}
+header {
+    text-align: left;
+    background: none;
+    font-size: 23.5px;
+    user-select: none;
+    flex:1;
+}
+header h1 {
+    margin-top: 32px;
+    font-weight:400
+}
+.DROPDOWN {
+    user-select: none;
+    position: relative;
+    display:inline-block;
+    width: fit-content;
+    flex:0.3;
+}
+.DROPDOWN:hover .DROP-CONTENT {
+    display:block;
+}
+.DROPDOWN:hover .material-symbols-outlined {
+    color: rgb(113, 105, 105)
+}
+.DROP-BTN {
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.DROP-CONTENT {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    min-width: 140%;
+    background-color: rgb(34, 39, 42);
+    margin-left:5px;
+    min-height:100%;
+    font-size:110%;
+}
+.DROP-CONTENT a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    cursor:pointer;
+    padding:7px;
+}
+.DROP-CONTENT a:hover {
+    background-color:rgba(173, 162, 162, 0.555);
+    font-weight: 400;
+    font-size:100%;
+    color: rgba(255, 255, 255, 0.849);
+}
+.MENU {
+    font-size: 80px;
+}
+.material-symbols-outlined {
+    background: none;
+    color: rgba(0, 238, 255);
+    border: none;
+    cursor:pointer;
+}
+nav {
+    min-width: max-content;
+    font-size: 24px;
+    font-weight: arial;
+    flex: 2.5;
+    padding-top: 40px;
+    user-select: none;
+    margin-right: 95px;
+    text-align: right;
+}
+footer {
+    background: rgba(0, 0, 0, 0.76);
+    color: whitesmoke;
+    font-size: 28px;
+    font-weight: 200;
+}
+nav a {
+    margin-right: 50px;
+    height: 100%;
+    width: 100%;
+    color: rgba(245,245,245,0.55);
+    cursor: pointer;
+    font-size:120%;
+}
+nav a:hover {
+    color: rgb(0, 242, 255);
+}
+main {
+    margin-top: auto 1;
+    height:fit-content;
+    color:rgb(255, 255, 255);
+    min-height: 788px;
+}
+.alert-success {
+    background-color: rgb(0, 255, 110);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 150%;
+    margin-right: 40%;
+    margin-left: 40%;
+    font-weight: 700;
+    padding: 5px;
+}
+.alert-danger {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 150%;
+    margin-right: 36%;
+    margin-left: 36%;
+    font-weight: 700;
+    padding: 5px;
+}

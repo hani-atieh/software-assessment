@@ -1,0 +1,14 @@
+.HEADING {
+    block-size: 70px;
+    font-size: 220%;
+    text-align: left;
+}
+.HEADING h1 {
+    font-weight: 400;
+    padding: 11px;
+}
+.PARAGRAPH {
+    text-align: left;
+    padding: 31px;
+    font-size: 165%;
+}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block CSS %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/submitreview.css') }}">{% endblock %}
+{% block main %}
+<main>
+    <section class="POSTING">
+        <div class="WRITING">
+            <form class="WRITING-INFO" method="POST"> 
+                <div class="SELECT-GAME">
+                    <br>
+                    <br>
+                    <br>
+                    <h1><u>Please leave your review in the boxes below:</u></h1>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+    
+
+                </div>
+                <input class="TITLE", type="text", placeholder="Name of your chosen game...", 
+                cols="40", rows="1", wrap="physical", maxlength="50", name="title", id="title">
+                <textarea class="REVIEW", type="text", placeholder="Type your review here...", 
+                cols="40", rows="7", wrap=physical, maxlength="1500", name="review", id="review"></textarea>
+                <label class="RATING-LABEL", for="rating">Rating:</label>
+                <input class="RATING", type="text", placeholder="_", maxlength="2", name="score", id="score">
+                <label class="RATING-10", for="score">/10</label>
+                <input class="POSTING-BUTTON", type="submit" ,name="submit", id="submit", value="POST REVIEW">
+            </form>
+        </div>
+        
+    </section>
+</main>
+{% endblock %}

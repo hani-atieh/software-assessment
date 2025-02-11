@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ page_title }}{% endblock %}
+{% block CSS %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/aboutweb.css') }}">{% endblock %}
+{% block main %}
+<main>
+    <section class="ABOUT">
+        <div class="HEADING">
+            <h1>What is this Website?</h1>
+            <hr>
+        </div>
+        <div class="PARAGRAPH">
+            <p><i><ul>Hi, and welcome to my website!</ul></i> This website is created to give people, such as yourself, the ability to post a review and leave thoughts<br> 
+                on any game that you please! There will also be a list of games that will be provided to you, in case you want something new.<br> 
+                These games have a description, including their genre, and a cover of the game in case you are unfimiliar with it.
+                <br>You can also check out any reviews that have been posted by other people to see if you share mutual feelings on a particular game!
+                <br> <br><i><u><ul>REMEMBER:</ul></u></i> Your review is not exclusive to the list of games provided. This website is made for you to freely leave a review on any game that you want.
+                <br>The list of games is there for you if you want to explore more popular games, read their description, and leave a review based
+                <br> on what you read.
+                <br>
+                <br><i><u><ul>IMPORTANT NOTE:</ul></u></i> In order to be able to do all this, you must be logged into the website. To do this, click on
+                <br>the 'Login' word on the top right, and login in with your details if you have been here before. If you do not have an account,
+                <br> click on the option to 'Sign Up'. Unless you make an account, you will be restricted to only being able to view reviews.
+                <br>
+                <br><i><u><ul>After creating an account and/or logging in:</ul></u></i>
+                Once you have done that, you will be able to fully access the website and explore a range of games to review by clicking on the 
+                <br>'Games to Review' button on the top right. By doing this, you would have also gained the ability to leave
+                <br>your own review, and give your opinion on any game you please, even if its more than one.
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

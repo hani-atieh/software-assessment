@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block CSS %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/reviews.css') }}">{% endblock %}
+{% block main %}
+<main>
+    <ul>
+        <hr>
+        {% set ns = namespace(row=0) %}
+        {% for review in reviews %}
+            {% if row < row + 1 %}
+                <div class="REVIEW-BOX">
+                    <div class="INFO">
+                        <div class="USERNAME">Review Submitted By: {{ reviews[ns.row].user_name }} - on: {{ reviews[ns.row].date }}</div>
+                        <div class="TITLE">{{ reviews[ns.row].title }} - Rated: {{ reviews[ns.row].score }}/10</div>
+                    </div>
+                    <div class="REVIEW-AREA">
+                        <p2><ul><u><i>REVIEW:</i></u></ul></p2>
+                        {{ reviews[ns.row].text  }}
+                    </div>
+                </div>
+
+                {% set ns.row = ns.row + 1 %}
+
+                {% if row >= review_count: %}
+                    {% set ns.row = review_count - 1 %}
+                {% endif%}
+                
+            {% endif %}
+        {% endfor %}
+    </ul>
+</main>
+{% endblock %}

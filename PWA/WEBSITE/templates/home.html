@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block CSS %}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/home.css') }}">{% endblock %}
+{% block main %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to <i>Player Game Reviews!</i></h1>
+        <hr>
+    </header>
+    <main>
+        <h2>Explore Reviews & Post Your Own!</h2>
+        <p><ul><u><i>HIGHLY RECOMMENDED:</i></italics></u></ul>Please navigate to the "About This Website" button in the top right before doing anything, to know everything you need to know about this website!</p>
+        <br>
+        <list>- By Gamers, For Gamers.</list>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <main>
+        <section class="MAIN-TOP">
+            <div class="DIV-GET-STARTED">
+            </div>
+            <section class="VIEW-POST-SEC">
+                <div class="VIEW-DIV">
+                    <div class="VIEW">
+                        <a href="/reviews">View All Reviews</a>
+                    </div>
+                </div>
+                <div class="POST-DIV">
+                    <div class="POST">
+                        <a href="/posting">Submit A Review</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Discover, Rate, and Review Your Favorite Games- Your Next Favorite Game Starts Here!</p>
+    </footer>
+
+{% endblock %}

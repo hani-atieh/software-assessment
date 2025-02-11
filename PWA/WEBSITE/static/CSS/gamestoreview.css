@@ -1,0 +1,13 @@
+
+.GAME-ROW {
+    display: flex
+}
+.GAME {
+    flex: 1;
+    margin-left:13px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.GAME img {
+    block-size: 680px;  
+}
