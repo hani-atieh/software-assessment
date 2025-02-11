@@ -1,10 +1,10 @@
+from WEBSITE import db
 from sqlalchemy import *
 from .auth import auth
 from sqlalchemy.sql import *
 from flask import Blueprint, render_template, request
 from .models import *
 from flask_sqlalchemy import *
-from WEBSITE import db
 from flask_login import login_required, current_user
 from .auth import logged_in
 
