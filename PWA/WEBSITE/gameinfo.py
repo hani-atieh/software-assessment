@@ -114,7 +114,7 @@ def darksouls():
             "Ultimate Game of All Time (Golden Joystick Awards 2021), One of the most influential games in modern gaming, Spawned the entire Soulsborne genre"],
 
             game_release = "September 22, 2011", 
-            game_title = ["Dark Souls", ""],
+            game_title = ["Dark Souls: 3", ""],
             page_title = "Dark Souls",
             user=current_user
             )

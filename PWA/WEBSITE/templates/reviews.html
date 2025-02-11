@@ -10,7 +10,7 @@
             {% if row < row + 1 %}
                 <div class="REVIEW-BOX">
                     <div class="INFO">
-                        <div class="USERNAME">Review Submitted By: {{ reviews[ns.row].user_name }} - on: {{ reviews[ns.row].date }}</div>
+                        <div class="USERNAME">Review Submitted By: {{ reviews[ns.row].user_name }} <br> Review Submitted on: {{ reviews[ns.row].date }}</div>
                         <div class="TITLE">{{ reviews[ns.row].title }} - Rated: {{ reviews[ns.row].score }}/10</div>
                     </div>
                     <div class="REVIEW-AREA">
