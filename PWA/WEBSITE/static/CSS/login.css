@@ -1,4 +1,18 @@
-
+.OTHER-INFO {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-right: 100px;
+    font-weight: 400;
+}
+.OTHER-INFO a {
+    color:whitesmoke;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+.OTHER-INFO a:hover {
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+}
 .LOG-HEAD {
     margin-bottom: 75px;
     color:rgb(255, 255, 255);
@@ -67,19 +81,4 @@
 .LOGIN input[type=submit]:hover {
     background-color: whitesmoke;
     color:rgb(36, 37, 36);
-}
-.OTHER-INFO {
-    margin-top: 50px;
-    margin-bottom: 0px;
-    margin-right: 100px;
-    font-weight: 400;
-}
-.OTHER-INFO a {
-    color:whitesmoke;
-    margin-left: 30px;
-    text-decoration: underline;
-}
-.OTHER-INFO a:hover {
-    color:rgb(255, 255, 255);
-    cursor:pointer;
 }

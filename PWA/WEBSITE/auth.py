@@ -1,10 +1,10 @@
+from sqlalchemy.sql import func
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask import Blueprint, render_template, request, flash, redirect, url_for, request
 from .models import User, Review
-from flask_login import login_user, login_required, logout_user, current_user
 from . import db
 from .models import Games
-from sqlalchemy.sql import func
+from flask_login import login_user, login_required, logout_user, current_user
 import datetime
 from .forms import GameSelectForm
 

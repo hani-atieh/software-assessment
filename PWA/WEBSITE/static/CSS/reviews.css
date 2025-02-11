@@ -1,6 +1,8 @@
-.REVIEW-BOX {
-    margin: 30px;
-    margin-bottom: 160px;
+.USERNAME {
+    flex: 1.25;
+    text-align: left;
+    font-size: 145%;
+    font-weight: 647% ;
 }
 .INFO {
     display: flex;
@@ -8,12 +10,6 @@
     padding: 8px;
     margin-right: 17.5%;
     background-color: rgba(32, 30, 30, 0.301);
-}
-.USERNAME {
-    flex: 1.25;
-    text-align: left;
-    font-size: 145%;
-    font-weight: 647% ;
 }
 .TITLE {
     font: Arial;
@@ -23,6 +19,10 @@
     font-size: 210%;
     font-weight:400;
 
+}
+.REVIEW-BOX {
+    margin: 30px;
+    margin-bottom: 160px;
 }
 .REVIEW-AREA {
     flex: 1;

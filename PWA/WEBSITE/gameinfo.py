@@ -1,12 +1,12 @@
 from flask import Blueprint, render_template
 
 gameinfo = Blueprint('gameinfo', __name__)
+from flask_login import login_required, current_user
 image = str
 game_release = str
 page_title = str
 game_title = []
 game_info = []
-from flask_login import login_required, current_user
 
 
 

@@ -2,6 +2,27 @@
 .MAIN-TOP {
     display: block;
 }
+.POST-DIV {
+    min-width: min-content;
+    min-height: max-content;
+    flex:1;
+}
+.POST a {
+    font-size: 47px;
+    font-weight:400;
+    padding-left: 20px;
+    color: whitesmoke;
+    width: 300px;
+  border: 15px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 20px;
+  background-color: rgba(76, 72, 72, 0.301);
+}
+.POST a:hover {
+    color: rgba(210, 198, 198, 0.55);
+    cursor:pointer;
+}
+
 .VIEW-POST-SEC {
     display: flex;
     justify-content: space-around;
@@ -25,26 +46,6 @@
   background-color: rgba(76, 72, 72, 0.301);
 }
 .VIEW a:hover {
-    color: rgba(210, 198, 198, 0.55);
-    cursor:pointer;
-}
-.POST-DIV {
-    min-width: min-content;
-    min-height: max-content;
-    flex:1;
-}
-.POST a {
-    font-size: 47px;
-    font-weight:400;
-    padding-left: 20px;
-    color: whitesmoke;
-    width: 300px;
-  border: 15px solid rgb(255, 255, 255);
-  padding: 50px;
-  margin: 20px;
-  background-color: rgba(76, 72, 72, 0.301);
-}
-.POST a:hover {
     color: rgba(210, 198, 198, 0.55);
     cursor:pointer;
 }

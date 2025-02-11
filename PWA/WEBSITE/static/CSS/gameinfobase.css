@@ -18,6 +18,16 @@
     margin-top:50px;
     display:flex
 }
+.GO-BACK a{
+    color:rgb(255, 255, 255);
+}
+.GO-BACK a:hover {
+    color:rgb(203, 37, 37);
+    
+}
+.GO-BACK a:active {
+    color:white;
+}
 .GO-BACK {
     text-align: center;
     margin: 40px;
@@ -31,14 +41,4 @@
     border: none;
     cursor:pointer;
     padding:5px;
-}
-.GO-BACK a{
-    color:rgb(255, 255, 255);
-}
-.GO-BACK a:hover {
-    color:rgb(203, 37, 37);
-    
-}
-.GO-BACK a:active {
-    color:white;
 }
